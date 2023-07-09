@@ -1,9 +1,9 @@
 # Changelog
 
 
-## 1.0.0-dev.5 (2023-07-09)
+## 1.0.0-dev.1 (2023-07-09)
 
-### build
+### chore
 
-* [] build!: Bump nyx-plugin version (Nate Ebel)
+* [] chore!: Init project (Nate Ebel)
 
