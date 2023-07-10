@@ -1,9 +1,9 @@
 # Changelog
 
 
-## 1.0.0-dev.1 (2023-07-09)
+## 1.0.0-dev.2 (2023-07-10)
 
 ### chore
 
-* [] chore!: Init project (Nate Ebel)
+* [] chore!: Use local version (Nate Ebel)
 
