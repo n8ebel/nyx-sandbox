@@ -55,6 +55,7 @@ configure<com.mooltiverse.oss.nyx.gradle.NyxExtension> {
                 gitCommit.set("true")
                 gitCommitMessage.set("chore: Release version {{version}}")
                 gitPush.set("true")
+                publish.set("true")
                 collapseVersions.set(true)
                 collapsedVersionQualifier.set("dev")
             }
