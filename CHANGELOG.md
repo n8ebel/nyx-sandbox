@@ -1,9 +1,9 @@
 # Changelog
 
 
-## 1.0.0-dev.2 (2023-07-10)
+## 1.0.0-dev.3 (2023-07-15)
 
-### chore
+### feat
 
-* [] chore!: Use local version (Nate Ebel)
+* [] feat: goo (Nate Ebel)
 
