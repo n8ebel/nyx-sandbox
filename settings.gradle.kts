@@ -78,8 +78,8 @@ configure<com.mooltiverse.oss.nyx.gradle.NyxExtension> {
             type.set("GITHUB")
             options {
                 put("AUTHENTICATION_TOKEN", "{{#environmentVariable}}GITHUB_TOKEN{{/environmentVariable}}")
-                put("REPOSITORY_NAME", "url-shortener")
-                put("REPOSITORY_OWNER", "goobar-dev")
+                put("REPOSITORY_NAME", "nyx-sandbox")
+                put("REPOSITORY_OWNER", "n8ebel")
             }
         }
     }
