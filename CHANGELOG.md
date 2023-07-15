@@ -1,9 +1,9 @@
 # Changelog
 
 
-## 1.0.0-dev.8 (2023-07-15)
+## 1.0.0-dev.9 (2023-07-15)
 
-### feat
+### fix
 
-* [] feat: foo (Nate Ebel)
+* [] fix: Use non-custom version (Nate Ebel)
 
