@@ -9,7 +9,7 @@ pluginManagement {
 }
 
 plugins {
-    id("com.mooltiverse.oss.nyx") version "2.4.5"
+    id("com.mooltiverse.oss.nyx") version "2.4.6-hotfix236.1"
 }
 
 rootProject.name = "nyx-sandbox"
