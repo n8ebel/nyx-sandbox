@@ -4,20 +4,20 @@
   "changelog" : {
     "releases" : [ {
       "date" : "2023-07-15",
-      "name" : "1.0.0-dev.4",
+      "name" : "1.0.0-dev.5",
       "sections" : [ {
         "name" : "feat",
         "commits" : [ {
-          "sha" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
-          "date" : 1689394574,
-          "parents" : [ "7e574749a95a4ebab03cf7939f8123be8b5464a1" ],
+          "sha" : "a36a70812575813ae704d312e093a968a190617d",
+          "date" : 1689394669,
+          "parents" : [ "7c99a2d369cecf925a0f0d23bb25509a19101e5d" ],
           "authorAction" : {
             "identity" : {
               "name" : "Nate Ebel",
               "email" : "n8ebel@goobar.dev"
             },
             "timeStamp" : {
-              "timeStamp" : 1689394574000,
+              "timeStamp" : 1689394669000,
               "offset" : -360
             }
           },
@@ -27,7 +27,7 @@
               "email" : "n8ebel@goobar.dev"
             },
             "timeStamp" : {
-              "timeStamp" : 1689394574000,
+              "timeStamp" : 1689394669000,
               "offset" : -360
             }
           },
@@ -42,7 +42,16 @@
     } ]
   },
   "configuration" : {
-    "services" : { },
+    "services" : {
+      "github" : {
+        "options" : {
+          "AUTHENTICATION_TOKEN" : "{{#environmentVariable}}GITHUB_TOKEN{{/environmentVariable}}",
+          "REPOSITORY_NAME" : "url-shortener",
+          "REPOSITORY_OWNER" : "goobar-dev"
+        },
+        "type" : "GITHUB"
+      }
+    },
     "scheme" : "SEMVER",
     "changelog" : {
       "path" : "CHANGELOG.md",
@@ -83,7 +92,7 @@
           "versionRangeFromBranchName" : false
         }
       },
-      "publicationServices" : [ ],
+      "publicationServices" : [ "github" ],
       "remoteRepositories" : [ ]
     },
     "stateFile" : "state.txt",
@@ -115,16 +124,16 @@
   },
   "internals" : {
     "infer.input.configured.releaseLenient" : "true",
-    "make.input.version" : "1.0.0-dev.4",
+    "make.input.version" : "1.0.0-dev.5",
     "make.input.repository.current.branch" : "main",
-    "make.input.state.initialCommit" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
+    "make.input.state.initialCommit" : "a36a70812575813ae704d312e093a968a190617d",
     "infer.input.configured.releasePrefix" : "null",
     "infer.input.configured.scheme" : "SEMVER",
     "infer.input.repository.current.branch" : "main",
-    "infer.output.state.version" : "1.0.0-dev.4",
+    "infer.output.state.version" : "1.0.0-dev.5",
     "make.input.changelog.file" : "/Users/nate/Desktop/nyx-sandbox/CHANGELOG.md",
-    "infer.input.repository.last.commit" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
-    "make.input.repository.last.commit" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
+    "infer.input.repository.last.commit" : "a36a70812575813ae704d312e093a968a190617d",
+    "make.input.repository.last.commit" : "a36a70812575813ae704d312e093a968a190617d",
     "infer.input.configured.bump" : "null",
     "make.input.state.newVersion" : "true",
     "infer.input.configured.initialVersion" : "0.1.0",
@@ -134,16 +143,16 @@
   "releaseAssets" : [ ],
   "releaseScope" : {
     "commits" : [ {
-      "sha" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
-      "date" : 1689394574,
-      "parents" : [ "7e574749a95a4ebab03cf7939f8123be8b5464a1" ],
+      "sha" : "a36a70812575813ae704d312e093a968a190617d",
+      "date" : 1689394669,
+      "parents" : [ "7c99a2d369cecf925a0f0d23bb25509a19101e5d" ],
       "authorAction" : {
         "identity" : {
           "name" : "Nate Ebel",
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -153,7 +162,7 @@
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -164,18 +173,18 @@
       },
       "tags" : [ ]
     } ],
-    "previousVersion" : "1.0.0-dev.3",
+    "previousVersion" : "1.0.0-dev.4",
     "previousVersionCommit" : {
-      "sha" : "7e574749a95a4ebab03cf7939f8123be8b5464a1",
-      "date" : 1689394481,
-      "parents" : [ "4b1b26366b45b900ae0f4c6f936caa5263518d2b" ],
+      "sha" : "7c99a2d369cecf925a0f0d23bb25509a19101e5d",
+      "date" : 1689394584,
+      "parents" : [ "b70595a60d2ff3821ef34e6a3d932e47822ba80d" ],
       "authorAction" : {
         "identity" : {
           "name" : "Nate Ebel",
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394481000,
+          "timeStamp" : 1689394584000,
           "offset" : -360
         }
       },
@@ -185,33 +194,33 @@
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394481000,
+          "timeStamp" : 1689394584000,
           "offset" : -360
         }
       },
       "message" : {
-        "fullMessage" : "chore: Release version 1.0.0-dev.3",
-        "shortMessage" : "chore: Release version 1.0.0-dev.3",
+        "fullMessage" : "chore: Release version 1.0.0-dev.4",
+        "shortMessage" : "chore: Release version 1.0.0-dev.4",
         "footers" : { }
       },
       "tags" : [ {
-        "name" : "1.0.0-dev.3",
-        "target" : "7e574749a95a4ebab03cf7939f8123be8b5464a1",
+        "name" : "1.0.0-dev.4",
+        "target" : "7c99a2d369cecf925a0f0d23bb25509a19101e5d",
         "annotated" : false
       } ]
     },
     "primeVersion" : "0.1.0",
     "significantCommits" : [ {
-      "sha" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
-      "date" : 1689394574,
-      "parents" : [ "7e574749a95a4ebab03cf7939f8123be8b5464a1" ],
+      "sha" : "a36a70812575813ae704d312e093a968a190617d",
+      "date" : 1689394669,
+      "parents" : [ "7c99a2d369cecf925a0f0d23bb25509a19101e5d" ],
       "authorAction" : {
         "identity" : {
           "name" : "Nate Ebel",
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -221,7 +230,7 @@
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -233,16 +242,16 @@
       "tags" : [ ]
     } ],
     "initialCommit" : {
-      "sha" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
-      "date" : 1689394574,
-      "parents" : [ "7e574749a95a4ebab03cf7939f8123be8b5464a1" ],
+      "sha" : "a36a70812575813ae704d312e093a968a190617d",
+      "date" : 1689394669,
+      "parents" : [ "7c99a2d369cecf925a0f0d23bb25509a19101e5d" ],
       "authorAction" : {
         "identity" : {
           "name" : "Nate Ebel",
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -252,7 +261,7 @@
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -264,16 +273,16 @@
       "tags" : [ ]
     },
     "finalCommit" : {
-      "sha" : "b70595a60d2ff3821ef34e6a3d932e47822ba80d",
-      "date" : 1689394574,
-      "parents" : [ "7e574749a95a4ebab03cf7939f8123be8b5464a1" ],
+      "sha" : "a36a70812575813ae704d312e093a968a190617d",
+      "date" : 1689394669,
+      "parents" : [ "7c99a2d369cecf925a0f0d23bb25509a19101e5d" ],
       "authorAction" : {
         "identity" : {
           "name" : "Nate Ebel",
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -283,7 +292,7 @@
           "email" : "n8ebel@goobar.dev"
         },
         "timeStamp" : {
-          "timeStamp" : 1689394574000,
+          "timeStamp" : 1689394669000,
           "offset" : -360
         }
       },
@@ -308,8 +317,8 @@
     "publish" : "false",
     "versionRangeFromBranchName" : false
   },
-  "timestamp" : 1689394584729,
-  "version" : "1.0.0-dev.4",
+  "timestamp" : 1689394678947,
+  "version" : "1.0.0-dev.5",
   "scheme" : "SEMVER",
   "coreVersion" : false,
   "newRelease" : false,
