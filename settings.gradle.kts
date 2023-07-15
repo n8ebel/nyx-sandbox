@@ -3,14 +3,13 @@ import com.mooltiverse.oss.nyx.gradle.NyxExtension
 
 pluginManagement {
     repositories {
-        mavenLocal()
         mavenCentral()
         gradlePluginPortal()
     }
 }
 
 plugins {
-    id("com.mooltiverse.oss.nyx") version "2.4.6"
+    id("com.mooltiverse.oss.nyx") version "2.4.5"
 }
 
 rootProject.name = "nyx-sandbox"
