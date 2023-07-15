@@ -38,6 +38,7 @@ configure<com.mooltiverse.oss.nyx.gradle.NyxExtension> {
     }
 
     releaseTypes {
+        publicationServices.set(listOf("github"))
         enabled.set(listOf("release", "pre-release"))
         items {
             register("release") {
@@ -67,6 +68,17 @@ configure<com.mooltiverse.oss.nyx.gradle.NyxExtension> {
         remotes {
             register("origin") {
                 authenticationMethod.set("PUBLIC_KEY")
+            }
+        }
+    }
+
+    services {
+        register("github") {
+            type.set("GITHUB")
+            options {
+                put("AUTHENTICATION_TOKEN", "{{#environmentVariable}}GITHUB_TOKEN{{/environmentVariable}}")
+                put("REPOSITORY_NAME", "url-shortener")
+                put("REPOSITORY_OWNER", "goobar-dev")
             }
         }
     }
